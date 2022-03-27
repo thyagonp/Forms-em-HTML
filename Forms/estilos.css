@@ -1,0 +1,20 @@
+body {
+	background:url(imgs/fundo.jpg);
+	color : navy;
+	font-family:Comic Sans MS;
+}
+
+#areaInformacoes {
+	background-color:silver;
+	width:800px;
+	margin:0px auto;
+	border: 20px groove fuchsia;
+	text-align:center;
+}
+
+#frmCadastro {
+	border: 4px ridge yellow;
+	margin:10px;
+	padding:10px;
+	text-align:left;
+}

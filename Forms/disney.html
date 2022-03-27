@@ -1,0 +1,108 @@
+<html> <!-- salvar como disney.html -->
+	<head>
+	   <title>Agendamento Disney World</title>
+	   <!--  arquivo externo estilos.css -->
+	   <link 	rel="stylesheet"	type="text/css"	href="estilos.css">
+	</head>
+	
+	<body>
+	  <div id="areaInformacoes">
+		<h1>Agendamento de Atividade-Disney World</h1>
+		
+		<form 	id="frmCadastro"
+				action="agendaDisney.php"
+				method="get"
+				enctype="">
+			RESORT:
+			<input	type="text"
+					name="resort"
+					value="Disney World Orlando"
+					readonly> 
+			- Senha:
+			<input	type="password"
+					name="senha"
+					maxlength="10">
+			<hr>
+			Nome do responsável:
+			<input	type="text"
+					name="responsavel"
+					size="80"
+					required
+					maxlength="80">
+			<br>
+			N&ordm; de familiares (incluindo crianças):
+			<input 	type="number"
+					min="1"
+					max="99"
+					maxlength="2"
+					value="4"
+					name="familiares">
+					
+			<fieldset>
+				<legend>Sexo</legend>
+				<input 	type="radio"
+						value="M" 
+						name="sexo"> Masculino
+						
+				<input 	type="radio"
+						value="F"
+						checked
+						name="sexo"> Feminino
+				
+			</fieldset>
+			e-mail:
+			<input 	type="email"
+					name="email"
+					maxlength="100"
+					size="80">
+			<br>
+			<input 	type="checkbox"
+					value="S" checked 
+					name="recEmails"> Quero receber e-mails
+					
+			<h3>Acesso ao Parque</h3>
+			
+			Data da visita:
+			<input 	type="date"
+					min="2020-05-05"
+					max="2021-12-31"
+					name="dataVisita">
+			- Hora da entrada:
+			<input 	type="time"
+					min="10:00"
+					max="20:00"
+					name="horaEntrada">
+			<br>
+			Cor da Pulseira:
+			<input 	type="color"
+					name="pulseira"
+					value="#800080">
+			<br>
+			Número de atrações a visitar:
+			1 
+			<input 	type="range" 
+					min="1"
+					max="10"
+					value="5"
+					name="atracoes">10
+			<br>
+			Foto da família:
+			<input 	type="file"
+					name="fotoFamilia">
+			<h3>Preferência de comida</h3>
+			<textarea	name="comida"
+						placeholder="Insira sua preferncias aqui (vegano, carnivoro, etc...)"
+						rows="3"
+						cols="80"></textarea>
+			
+			<hr>
+			<input type="submit" value="Enviar Dados">
+			<input type="reset" value="Limpar Dados">
+					
+		
+			
+		</form>
+		
+	  </div>
+	</body>
+</html>
